@@ -6,11 +6,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "emotions")
 public class Emotion {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String emotion;
     private String text;
     private LocalDateTime createdAt;
